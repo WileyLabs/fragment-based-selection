@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fragment Identifiers mapped to existing JS APIs</title>
+</head>
+<body>
+  <blockquote>
+    Fragment Identifiers below are mapped into their JS API equivalents.
+    Text within the parentheticals is decoded (because URI escaping) and then passed to the chosen function.
+  </blockquote>
+  <ol>
+    <li><a href="#querySelector(.content h3)">#querySelector(.content h3)</a>
+    <li><a href="#querySelectorAll(.content li)">#querySelectorAll(.content li)</a>
+    <li><a href="#evaluate(//*[@class='content']//li)">#evaluate(//*[@class='content']//li)</a>
+  </ol>
+  
+  <div class="content">
+    <h3>Testing Targeting Types</h3>
+    <p>Of these types:</p>
+    <ol>
+      <li>querySelector - find first via CSS selector</li>
+      <li>querySelectorAll - find all via CSS selector</li>
+      <li>evaluate - find all via XPath selector</li>
+    </ol>
+  </div>
+</body>
+</html>
